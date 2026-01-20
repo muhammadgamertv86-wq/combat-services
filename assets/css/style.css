@@ -202,7 +202,7 @@ img {
 
 .hero-title {
     font-size: 3.5rem;
-    line-height: 1.2;
+    line-height: 1.1;
     margin-bottom: var(--spacing-sm);
     color: var(--color-white);
 }
@@ -351,7 +351,8 @@ img {
     }
 
     .hero-title {
-        font-size: 2rem;
+        font-size: 2.4rem;
+        line-height: 1.2;
         word-wrap: break-word;
         /* Prevent long words from breaking layout */
     }
@@ -415,20 +416,25 @@ img {
         top: 0;
         left: 0;
         width: 100%;
-        height: 100%;
-        background: rgba(10, 10, 10, 0.98);
-        /* Near solid background */
-        backdrop-filter: blur(15px);
-        padding: 2rem;
-        justify-content: center;
+        height: 100vh;
+        background: #0a0a0a;
+        /* Solid black background to prevent overlap */
+        padding: 80px 2rem 2rem 2rem;
+        justify-content: flex-start;
         align-items: center;
         gap: 2.5rem;
-        z-index: 1050;
+        z-index: 2000;
+        overflow-y: auto;
     }
 
     .nav-links.active a {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
         font-family: var(--font-heading);
+    }
+
+    section {
+        padding-top: 100px !important;
+        /* Ensure sections clear the fixed navbar on mobile */
     }
 
     .section-title {
@@ -439,6 +445,18 @@ img {
     .section-desc {
         font-size: 1rem;
         padding: 0 1rem;
+    }
+
+    .project-card {
+        height: 350px !important;
+    }
+
+    .project-title {
+        font-size: 1.3rem !important;
+    }
+
+    .project-category {
+        font-size: 0.7rem !important;
     }
 }
 
