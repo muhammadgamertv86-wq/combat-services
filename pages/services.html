@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | Combat Services</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <style>
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: var(--spacing-md);
+            margin-top: var(--spacing-lg);
+        }
+
+        .service-card {
+            background-color: var(--color-bg-secondary);
+            padding: var(--spacing-md);
+            border: 1px solid var(--color-border);
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--color-accent);
+        }
+
+        .service-icon {
+            font-size: 2rem;
+            color: var(--color-accent);
+            margin-bottom: var(--spacing-sm);
+        }
+
+        .service-title {
+            font-size: 1.25rem;
+            margin-bottom: var(--spacing-xs);
+            color: var(--color-white);
+        }
+
+        .service-desc {
+            color: var(--color-text-muted);
+            font-size: 0.95rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="container navbar-container">
+            <a href="../index.html" class="logo">COMBAT SERVICES</a>
+            <nav class="nav-links">
+                <a href="../index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="services.html" class="active">Services</a>
+                <a href="projects.html">Projects</a>
+                <a href="success-stories.html">Success Stories</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <div class="mobile-menu-toggle">☰</div>
+        </div>
+    </header>
+
+    <main>
+        <section class="py-large container">
+            <h1 class="section-title text-center">Our Services</h1>
+            <p class="text-center section-desc"
+                style="max-width: 700px; margin: 1rem auto; color: var(--color-text-muted);">
+                We deliver end-to-end luxury construction and development solutions. From concept to handover, our
+                discipline ensures perfection.
+            </p>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🏠</div>
+                    <h3 class="service-title">Residential Construction</h3>
+                    <p class="service-desc">Bespoke homes tailored to your lifestyle. We handle every detail of your
+                        dream residence with precision.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🏢</div>
+                    <h3 class="service-title">Commercial Developments</h3>
+                    <p class="service-desc">High-end plazas and workspaces designed for functionality and long-term
+                        value appreciation.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🏗️</div>
+                    <h3 class="service-title">Turnkey Solutions</h3>
+                    <p class="service-desc">Complete project lifecycle management. You provide the vision; we handle the
+                        execution.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🔨</div>
+                    <h3 class="service-title">Renovations & Remodeling</h3>
+                    <p class="service-desc">Transforming existing structures into modern masterpieces with minimal
+                        disruption.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">📋</div>
+                    <h3 class="service-title">Project Management</h3>
+                    <p class="service-desc">Disciplined oversight for your projects. We are your eyes and ears on the
+                        ground.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🔍</div>
+                    <h3 class="service-title">Quality Control & Inspections</h3>
+                    <p class="service-desc">Rigorous inspection protocols at every phase to ensure workmanship,
+                        materials, and finishes meet premium standards.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <h3>COMBAT SERVICES</h3>
+                <p>Construction & Development</p>
+            </div>
+            <div class="footer-links">
+                <a href="../index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="success-stories.html">Success Stories</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-contact">
+                <p>Bahria Town Phase 8, Islamabad</p>
+                <p><a href="mailto:COMBATBUILDERS28@GMAIL.COM" style="color: inherit;">COMBATBUILDERS28@GMAIL.COM</a>
+                </p>
+            </div>
+        </div>
+        <div class="footer-bottom text-center">
+            <p>&copy; Combat Services.</p>
+        </div>
+    </footer>
+    <script src="../assets/js/main.js"></script>
+</body>
+
+</html>

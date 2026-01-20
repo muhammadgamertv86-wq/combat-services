@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Success Stories | Combat Services</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Outfit:wght@200;300;400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <style>
+        /* Overriding fonts for this specific premium page */
+        body {
+            font-family: 'Outfit', sans-serif;
+            background-color: #050505;
+        }
+
+        h1,
+        h2,
+        h3 {
+            font-family: 'Playfair Display', serif;
+        }
+
+        .premium-hero {
+            position: relative;
+            height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            background: radial-gradient(circle at center, #1a1a1a 0%, #000000 100%);
+        }
+
+        .premium-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('../assets/images/hero_bg.png');
+            /* Using existing asset for texture */
+            background-size: cover;
+            background-position: center;
+            opacity: 0.2;
+            filter: grayscale(100%);
+        }
+
+        .hero-content-wrapper {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            max-width: 900px;
+            padding: 0 2rem;
+        }
+
+        .premium-eyebrow {
+            color: var(--color-accent);
+            text-transform: uppercase;
+            letter-spacing: 6px;
+            font-size: 0.9rem;
+            margin-bottom: 2rem;
+            display: block;
+            opacity: 0;
+            animation: fadeIn 1s ease forwards 0.5s;
+        }
+
+        .premium-title {
+            font-size: 5rem;
+            line-height: 1.1;
+            color: #fff;
+            margin-bottom: 2rem;
+            font-weight: 400;
+            opacity: 0;
+            animation: fadeInUp 1s ease forwards 0.8s;
+        }
+
+        .premium-title span {
+            display: block;
+            font-style: italic;
+            color: var(--color-text-muted);
+            font-size: 3.5rem;
+            margin-top: 0.5rem;
+        }
+
+        .stats-container {
+            display: flex;
+            justify-content: center;
+            gap: 8rem;
+            margin-top: 5rem;
+            opacity: 0;
+            animation: fadeInUp 1s ease forwards 1.2s;
+        }
+
+        .stat-block {
+            text-align: center;
+            position: relative;
+        }
+
+        .stat-value {
+            font-family: 'Playfair Display', serif;
+            font-size: 6rem;
+            color: #fff;
+            line-height: 1;
+            font-weight: 400;
+            background: linear-gradient(to right, #fff 20%, #888 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .stat-description {
+            color: var(--color-accent);
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            font-size: 0.85rem;
+            margin-top: 1.5rem;
+            border-top: 1px solid rgba(212, 175, 55, 0.3);
+            display: inline-block;
+            padding-top: 1rem;
+        }
+
+        .cta-section {
+            padding: 6rem 0;
+            text-align: center;
+            background: #0a0a0a;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .premium-hero {
+                padding: 6rem 0;
+                height: auto;
+                min-height: 100vh;
+            }
+
+            .premium-title {
+                font-size: 2.5rem;
+            }
+
+            .premium-title span {
+                font-size: 1.8rem;
+            }
+
+            .stats-container {
+                flex-direction: column;
+                gap: 3rem;
+                margin-top: 3rem;
+            }
+
+            .stat-value {
+                font-size: 4rem;
+            }
+
+            .testimonial-section {
+                padding: 4rem 1rem !important;
+            }
+
+            .review-card {
+                padding: 2rem 1.5rem !important;
+            }
+
+            .add-review-section {
+                padding-top: 3rem !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="navbar" style="background: rgba(0,0,0,0.8); backdrop-filter: blur(10px);">
+        <div class="container navbar-container">
+            <a href="../index.html" class="logo">COMBAT SERVICES</a>
+            <nav class="nav-links">
+                <a href="../index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="services.html">Services</a>
+                <a href="projects.html">Projects</a>
+                <a href="success-stories.html" class="active" style="color: var(--color-accent);">Success Stories</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <div class="mobile-menu-toggle">☰</div>
+        </div>
+    </header>
+
+    <main>
+        <section class="premium-hero">
+            <div class="hero-content-wrapper">
+                <span class="premium-eyebrow">The Gold Standard</span>
+                <h1 class="premium-title">
+                    Uncompromising
+                    <span>Quality & trust</span>
+                </h1>
+
+                <div class="stats-container">
+                    <div class="stat-block">
+                        <div class="stat-value">1000+</div>
+                        <div class="stat-description">Projects Delivered</div>
+                    </div>
+                    <div class="stat-block">
+                        <div class="stat-value">20+</div>
+                        <div class="stat-description">Years of Excellence</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonial-section"
+            style="padding: 8rem 0; background-color: #050505; border-top: 1px solid rgba(255,255,255,0.05);">
+            <div class="container">
+                <h2 style="text-align: center; font-size: 3rem; color: #fff; margin-bottom: 4rem; font-weight: 400;">
+                    Client Chronicles</h2>
+
+                <div
+                    style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-bottom: 6rem;">
+                    <!-- Review 1 -->
+                    <div class="review-card"
+                        style="background: rgba(255,255,255,0.03); padding: 3rem 2rem; border: 1px solid rgba(255,255,255,0.05); text-align: center;">
+                        <div style="color: var(--color-accent); font-size: 1.5rem; margin-bottom: 1.5rem;">★★★★★</div>
+                        <p style="color: #ccc; font-style: italic; margin-bottom: 2rem; line-height: 1.8;">
+                            "Combat Services delivered beyond our expectations. The attention to detail in our villa's
+                            grey structure was impeccable. Truly a premium experience."
+                        </p>
+                        <h4 style="color: #fff; font-family: 'Playfair Display', serif; font-size: 1.2rem;">Mr. Arshad
+                            Khan</h4>
+                        <span
+                            style="color: #666; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1px;">Bahria
+                            Town</span>
+                    </div>
+
+                    <!-- Review 2 -->
+                    <div class="review-card"
+                        style="background: rgba(255,255,255,0.03); padding: 3rem 2rem; border: 1px solid rgba(255,255,255,0.05); text-align: center;">
+                        <div style="color: var(--color-accent); font-size: 1.5rem; margin-bottom: 1.5rem;">★★★★★</div>
+                        <p style="color: #ccc; font-style: italic; margin-bottom: 2rem; line-height: 1.8;">
+                            "Professionalism at its peak. They handled our commercial plaza construction with absolute
+                            discipline. Highly recommended for overseas Pakistanis."
+                        </p>
+                        <h4 style="color: #fff; font-family: 'Playfair Display', serif; font-size: 1.2rem;">Mrs. Salma
+                            Hayek</h4>
+                        <span
+                            style="color: #666; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1px;">London,
+                            UK</span>
+                    </div>
+
+                    <!-- Review 3 -->
+                    <div
+                        style="background: rgba(255,255,255,0.03); padding: 3rem 2rem; border: 1px solid rgba(255,255,255,0.05); text-align: center;">
+                        <div style="color: var(--color-accent); font-size: 1.5rem; margin-bottom: 1.5rem;">★★★★★</div>
+                        <p style="color: #ccc; font-style: italic; margin-bottom: 2rem; line-height: 1.8;">
+                            "Transforming our ancestral home was a challenge, but their team executed the renovation
+                            flawlessly. The finish quality is comparable to Dubai standards."
+                        </p>
+                        <h4 style="color: #fff; font-family: 'Playfair Display', serif; font-size: 1.2rem;">Brig. (R)
+                            Taimoor</h4>
+                        <span
+                            style="color: #666; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1px;">DHA
+                            Islamabad</span>
+                    </div>
+                </div>
+
+                <!-- Add Review Section -->
+                <div class="add-review-section"
+                    style="max-width: 700px; margin: 0 auto; text-align: center; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 4rem;">
+                    <h3 style="color: #fff; font-size: 2rem; margin-bottom: 1rem;">Share Your Experience</h3>
+                    <p style="color: #888; margin-bottom: 2rem;">We invite our distinguished clients to share their
+                        journey with us.</p>
+
+                    <form style="text-align: left; display: grid; gap: 1.5rem;">
+                        <input type="text" placeholder="Your Name"
+                            style="width: 100%; padding: 1rem; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); color: #fff; font-family: 'Outfit', sans-serif;">
+                        <textarea rows="4" placeholder="Your Review"
+                            style="width: 100%; padding: 1rem; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); color: #fff; font-family: 'Outfit', sans-serif;"></textarea>
+                        <button type="submit" class="btn btn-outline"
+                            style="width: 100%; text-transform: uppercase; letter-spacing: 2px;">Submit Review</button>
+                    </form>
+                </div>
+            </div>
+
+            <section class="cta-section">
+                <div class="container">
+                    <p style="color: #666; font-size: 1.1rem; max-width: 600px; margin: 0 auto 2rem; line-height: 1.8;">
+                        Our legacy is built on the foundation of trust, discipline, and international standards. Join
+                        the
+                        hundreds of clients who demand nothing but the absolute best.
+                    </p>
+                    <a href="contact.html" class="btn btn-outline">Schedule a Private Consultation</a>
+                </div>
+            </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <h3>COMBAT SERVICES</h3>
+                <p>Luxury Construction & Development</p>
+            </div>
+            <div class="footer-links">
+                <a href="../index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="projects.html">Projects</a>
+                <a href="success-stories.html">Success Stories</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-contact">
+                <p>Bahria Town Phase 8, Islamabad</p>
+                <p><a href="mailto:COMBATBUILDERS28@GMAIL.COM" style="color: inherit;">COMBATBUILDERS28@GMAIL.COM</a>
+                </p>
+            </div>
+        </div>
+        <div class="footer-bottom text-center">
+            <p>&copy; Combat Services. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="../assets/js/main.js"></script>
+</body>
+
+</html>

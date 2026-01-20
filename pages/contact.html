@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Combat Services</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <style>
+        .contact-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--spacing-lg);
+            margin-top: var(--spacing-lg);
+        }
+
+        .contact-info {
+            background-color: var(--color-bg-secondary);
+            padding: var(--spacing-md);
+            border: 1px solid var(--color-border);
+        }
+
+        .contact-form-wrapper {
+            background-color: var(--color-bg-secondary);
+            padding: var(--spacing-md);
+            border: 1px solid var(--color-border);
+        }
+
+        .form-group {
+            margin-bottom: var(--spacing-sm);
+        }
+
+        .form-label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
+            color: var(--color-text-muted);
+        }
+
+        .form-input,
+        .form-textarea {
+            width: 100%;
+            padding: 1rem;
+            background-color: var(--color-bg-dark);
+            border: 1px solid var(--color-border);
+            color: var(--color-white);
+            font-family: var(--font-body);
+        }
+
+        .form-input:focus,
+        .form-textarea:focus {
+            outline: none;
+            border-color: var(--color-accent);
+        }
+
+        .client-type-selector {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: var(--spacing-sm);
+        }
+
+        .radio-label {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            cursor: pointer;
+            color: var(--color-text-muted);
+        }
+
+        .radio-input:checked+span {
+            color: var(--color-accent);
+        }
+
+        .contact-detail-item {
+            margin-bottom: var(--spacing-md);
+        }
+
+        .contact-detail-label {
+            color: var(--color-accent);
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-detail-value {
+            font-size: 1.1rem;
+        }
+
+        @media (max-width: 768px) {
+            .contact-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="container navbar-container">
+            <a href="../index.html" class="logo">COMBAT SERVICES</a>
+            <nav class="nav-links">
+                <a href="../index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="services.html">Services</a>
+                <a href="projects.html">Projects</a>
+                <a href="success-stories.html">Success Stories</a>
+                <a href="contact.html" class="active">Contact</a>
+            </nav>
+            <div class="mobile-menu-toggle">☰</div>
+        </div>
+    </header>
+
+    <main>
+        <section class="py-large container">
+            <h1 class="section-title text-center">Get in Touch</h1>
+            <p class="text-center section-desc"
+                style="max-width: 700px; margin: 1rem auto; color: var(--color-text-muted);">
+                Ready to build with precision? Contact our team for a consultation.
+            </p>
+
+            <div class="contact-container">
+                <!-- Info Side -->
+                <div class="contact-info">
+                    <div class="contact-detail-item">
+                        <span class="contact-detail-label">Head Office</span>
+                        <div class="contact-detail-value">43D Circular Avenue,<br>Safari Valley D Usman Block,<br>Bahria
+                            Town Phase 8, Islamabad</div>
+                    </div>
+                    <div class="contact-detail-item">
+                        <span class="contact-detail-label">Email</span>
+                        <div class="contact-detail-value">
+                            <a href="mailto:COMBATBUILDERS28@GMAIL.COM"
+                                style="color: var(--color-white); text-decoration: none;">COMBATBUILDERS28@GMAIL.COM</a>
+                        </div>
+                    </div>
+                    <div class="contact-detail-item">
+                        <span class="contact-detail-label">Phone</span>
+                        <div class="contact-detail-value">
+                            <a href="https://wa.me/923335101981" target="_blank"
+                                style="color: var(--color-white); text-decoration: none;">+92 333 510 1981</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Form Side -->
+                <div class="contact-form-wrapper">
+                    <form action="https://formsubmit.co/COMBATBUILDERS28@GMAIL.COM" method="POST">
+                        <input type="hidden" name="_subject" value="New Quote Request - Combat Builders">
+                        <input type="hidden" name="_captcha" value="false">
+
+                        <div class="form-group">
+                            <label class="form-label">Name</label>
+                            <input type="text" name="name" class="form-input" placeholder="Your Full Name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Email</label>
+                            <input type="email" name="email" class="form-input" placeholder="email@example.com"
+                                required>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Message</label>
+                            <textarea name="message" class="form-textarea" rows="5"
+                                placeholder="Tell us about your project..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <h3>COMBAT SERVICES</h3>
+                <p>Construction & Development</p>
+            </div>
+            <div class="footer-links">
+                <a href="../index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="success-stories.html">Success Stories</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-contact">
+                <p>Bahria Town Phase 8, Islamabad</p>
+                <p><a href="mailto:COMBATBUILDERS28@GMAIL.COM" style="color: inherit;">COMBATBUILDERS28@GMAIL.COM</a>
+                </p>
+            </div>
+        </div>
+        <div class="footer-bottom text-center">
+            <p>&copy; Combat Services.</p>
+        </div>
+    </footer>
+    <script src="../assets/js/main.js"></script>
+</body>
+
+</html>
